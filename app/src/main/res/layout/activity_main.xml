@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/etNewItem"
+        android:layout_width="244dp"
+        android:layout_height="47dp"
+        android:layout_alignBottom="@+id/btnAddItem"
+        android:layout_alignLeft="@+id/lvItems"
+        android:layout_alignStart="@+id/lvItems"
+        android:ems="10"
+        android:hint="Enter a New Item"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="430dp" />
+
+    <Button
+        android:id="@+id/btnAddItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:onClick="onAddItem"
+        android:text="Add Item"
+        tools:layout_editor_absoluteX="278dp"
+        tools:layout_editor_absoluteY="445dp" />
+
+        <ListView
+            android:id="@+id/lvItems"
+            android:layout_width="334dp"
+            android:layout_height="402dp"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="31dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp" />
+
+</RelativeLayout>
+
